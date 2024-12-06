@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="bg_color">#fdf0d5</color>
+    <color name="txt_color">#003049</color>
+    <string name="text">Vertical-Español</string>
+
+</resources>

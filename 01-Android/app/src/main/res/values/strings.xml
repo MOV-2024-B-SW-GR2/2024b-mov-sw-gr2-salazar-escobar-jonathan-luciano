@@ -1,0 +1,6 @@
+<resources>
+    <color name="bg_color">#fff</color>
+    <color name="txt_color">#000</color>
+
+    <string name="text">Hello World!!</string>
+</resources>

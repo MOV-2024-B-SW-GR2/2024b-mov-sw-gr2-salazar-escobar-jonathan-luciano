@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="bg_color">#606c38</color>
+    <color name="txt_color">#fefae0</color>
+    <string name="text">Horizontal-Español</string>
+</resources>
