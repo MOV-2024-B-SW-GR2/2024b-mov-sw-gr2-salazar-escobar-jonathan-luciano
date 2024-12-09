@@ -7,7 +7,6 @@ class Animal (
     var name: String,
     var specie: String,
     var age: Int,
-    var idZoo: Int,
     var birthDay: Date,
     var isFeeded: Boolean,
     var weight: Double
@@ -17,7 +16,6 @@ class Animal (
                 "\n Name: $name" +
                 "\n Specie: $specie" +
                 "\n Age: $age" +
-                "\n Id Zoo: $idZoo" +
                 "\n BirthDay: $birthDay" +
                 "\n Is Feeded: $isFeeded" +
                 "\n Weight: $weight"

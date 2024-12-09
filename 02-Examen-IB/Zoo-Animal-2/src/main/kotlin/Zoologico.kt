@@ -15,7 +15,7 @@ class Zoologico (
     override fun toString(): String {
         var animalsString = ""
         animals.forEach {
-            animalsString += it.toString() + "\n"
+            animalsString += " "+it.toString() + "\n"
         }
 
         return "id: $id" +
