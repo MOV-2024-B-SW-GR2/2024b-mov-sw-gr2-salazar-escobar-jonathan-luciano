@@ -6,18 +6,18 @@
     android:padding="8dp">
 
     <TextView
-        android:id="@+id/tvNombreZoologico"
+        android:id="@+id/tvEspecieAnimal"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Nombre del zoologico"
+        android:text="Especie del animal"
         android:textSize="16sp"
         android:textStyle="bold" />
 
     <TextView
-        android:id="@+id/tvEstadoZoologico"
+        android:id="@+id/tvNombreAnimal"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Está abierto?"
+        android:text="Nombre del animal"
         android:textSize="14sp" />
 
     <LinearLayout
@@ -28,20 +28,13 @@
         android:paddingTop="8dp">
 
         <Button
-            android:id="@+id/btnVer"
+            android:id="@+id/btnEditarAnimal"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Ver"/>
+            android:text="Editar"/>
 
         <Button
-            android:id="@+id/btnEditar"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Editar"
-            android:layout_marginStart="8dp"/>
-
-        <Button
-            android:id="@+id/btnEliminar"
+            android:id="@+id/btnEliminarAnimal"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Eliminar"
