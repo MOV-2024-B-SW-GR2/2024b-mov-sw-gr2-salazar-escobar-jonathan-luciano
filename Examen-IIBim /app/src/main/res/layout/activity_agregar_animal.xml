@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:gravity="center_horizontal">
+
+    <!-- Título de la actividad -->
+
+    <TextView
+        android:id="@+id/tvTitulo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"
+        android:text="Agregar animal"
+        android:textSize="24sp"
+        android:textStyle="bold" />
+
+    <!-- Campo de texto para la marca del vehículo -->
+    <EditText
+        android:id="@+id/etNombre"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:hint="Nombre del Animal"
+        android:inputType="text"
+        android:padding="12dp" />
+
+    <!-- Campo de texto para el modelo del vehículo -->
+    <EditText
+        android:id="@+id/etEspecie"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:hint="Especie"
+        android:inputType="text"
+        android:padding="12dp" />
+
+    <!-- Campo de texto para el año del vehículo -->
+    <EditText
+        android:id="@+id/etEdad"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:hint="Edad"
+        android:inputType="number"
+        android:padding="12dp" />
+
+    <!-- Campo de texto para el precio del vehículo -->
+    <EditText
+        android:id="@+id/etCumpleanos"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:hint="Cumpleanos"
+        android:inputType="text"
+        android:padding="12dp" />
+
+    <!-- Botón para guardar el vehículo -->
+    <EditText
+        android:id="@+id/etPeso"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Peso"
+        android:inputType="numberDecimal" />
+
+    <Button
+        android:id="@+id/btnGuardarAnimal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginTop="20dp"
+        android:background="?android:attr/selectableItemBackground"
+        android:padding="16dp"
+        android:text="Guardar"
+        android:textColor="@android:color/white" />
+
+</LinearLayout>
