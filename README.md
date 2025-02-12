@@ -3,4 +3,4 @@
 
 
 # Enlace de Notas de clase
-[Click aqui para ver los informes de cada clase]([https://epnecuador.sharepoint.com/:o:/r/sites/2024-BSWGR2/SiteAssets/%5B2024-B%5D%5BSW%5D%5BGR2%5D%20Bloc%20de%20notas?d=w6a9e20a457474284aade521bf9be0bfc&csf=1&web=1&e=Ulbuzr](https://epnecuador-my.sharepoint.com/:o:/g/personal/jonathan_salazar04_epn_edu_ec/EtGmzxKDd_hChFsyZfICAK4BHC7p-zEjV0P9crAjv4bDXA?e=v5wz0P))
+[Click aqui para ver los informes de cada clase](https://epnecuador-my.sharepoint.com/:o:/g/personal/jonathan_salazar04_epn_edu_ec/EtGmzxKDd_hChFsyZfICAK4BHC7p-zEjV0P9crAjv4bDXA?e=v5wz0P)
