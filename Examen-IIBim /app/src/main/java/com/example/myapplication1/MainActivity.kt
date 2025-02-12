@@ -19,6 +19,7 @@ class MainActivity : AppCompatActivity() {
     private lateinit var zoologicoRepository: ZoologicoRepository
     private lateinit var adapter: ZoologicosAdapter
     private var zoologicos = mutableListOf<Zoologico>()
+    private lateinit var btnZoologicoMapa: Button
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -32,10 +33,15 @@ class MainActivity : AppCompatActivity() {
 
         recyclerView = findViewById(R.id.recyclerViewZoologicos)
         btnAgregarZoologico = findViewById(R.id.btnAgregarZoologico)
+        btnZoologicoMapa = findViewById(R.id.btnZoologicosMap)
 
         btnAgregarZoologico.setOnClickListener {
             val intent = Intent(this, AgregarZoologicoActivity::class.java)
             startActivityForResult(intent, AGREGAR_ZOOLOGICO_REQUEST)
+        }
+
+        btnZoologicoMapa.setOnClickListener{
+            irActividad(ZoologicoMap::class.java)
         }
 
         loadZoologicos()
@@ -90,6 +96,10 @@ class MainActivity : AppCompatActivity() {
         if ((requestCode == EDITAR_ZOOLOGICO_REQUEST || requestCode == AGREGAR_ZOOLOGICO_REQUEST) && resultCode == RESULT_OK) {
             loadZoologicos()
         }
+    }
+
+    fun irActividad(clase: Class<*>){
+        startActivity(Intent(this, clase))
     }
 
     companion object {

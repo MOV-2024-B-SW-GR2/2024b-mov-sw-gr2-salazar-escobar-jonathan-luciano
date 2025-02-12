@@ -3,7 +3,6 @@ package com.example.myapplication1.repository
 import android.content.ContentValues
 import com.example.myapplication1.data.DBHelper
 import com.example.myapplication1.models.Zoologico
-import com.example.myapplication1.models.Animal
 
 class ZoologicoRepository(private val dbHelper: DBHelper) {
 

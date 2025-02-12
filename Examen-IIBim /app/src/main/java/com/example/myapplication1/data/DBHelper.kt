@@ -31,13 +31,25 @@ class DBHelper(context: Context) : SQLiteOpenHelper(context, DATABASE_NAME, null
             )
         """.trimIndent()
 
+        val createUbicacionTable = """
+            CREATE TABLE $TABLE_UBICACION (
+                $COLUMN_ID INTEGER PRIMARY KEY AUTOINCREMENT,
+                $COLUMN_LATITUD REAL NOT NULL,
+                $COLUMN_LONGITUD REAL NOT NULL,
+                $COLUMN_ZOOLOGICO_ID INTEGER NOT NULL,
+                FOREIGN KEY($COLUMN_ZOOLOGICO_ID) REFERENCES $TABLE_ZOOLOGICO($COLUMN_ID) ON DELETE CASCADE
+            )
+        """.trimIndent()
+
         db.execSQL(createZoologicoTable)
         db.execSQL(createAnimalTable)
+        db.execSQL(createUbicacionTable)
     }
 
     override fun onUpgrade(db: SQLiteDatabase, oldVersion: Int, newVersion: Int) {
         db.execSQL("DROP TABLE IF EXISTS $TABLE_ANIMAL")
         db.execSQL("DROP TABLE IF EXISTS $TABLE_ZOOLOGICO")
+        db.execSQL("DROP TABLE IF EXISTS $TABLE_UBICACION")
         onCreate(db)
     }
 
@@ -47,6 +59,7 @@ class DBHelper(context: Context) : SQLiteOpenHelper(context, DATABASE_NAME, null
 
         const val TABLE_ZOOLOGICO = "zoologicos"
         const val TABLE_ANIMAL = "animales"
+        const val TABLE_UBICACION = "ubicaciones"
 
         const val COLUMN_ID = "id"
         const val COLUMN_NOMBRE = "nombre"
@@ -60,5 +73,8 @@ class DBHelper(context: Context) : SQLiteOpenHelper(context, DATABASE_NAME, null
         const val COLUMN_PESO = "peso"
         const val COLUMN_ESTA_ALIMENTADO = "esta_alimentado"
         const val COLUMN_ZOOLOGICO_ID = "zoologico_id"
+
+        const val COLUMN_LATITUD = "latitud"
+        const val COLUMN_LONGITUD = "longitud"
     }
 }
